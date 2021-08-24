@@ -1,6 +1,6 @@
-package entities.concretes.subClasses;
+package core.veritification.concretes;
 
-import entities.abstracts.Veritification;
+import core.veritification.abstracts.Veritification;
 
 public class CardAppealVeritification implements Veritification {
 private int cardTypeId;

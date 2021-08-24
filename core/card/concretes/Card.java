@@ -1,4 +1,4 @@
-package entities.concretes.superClasses;
+package core.card.concretes;
 
 public class Card {
 private int cardTypeId;

@@ -1,4 +1,4 @@
-package entities.concretes.superClasses;
+package core.veritification.concretes;
 
 public class Veritification {
 private int veritificationId;

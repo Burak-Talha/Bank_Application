@@ -1,4 +1,4 @@
-package entities.concretes.superClasses;
+package core.appeal.concretes;
 
 public class Appeals {
 private int appealTypeId;

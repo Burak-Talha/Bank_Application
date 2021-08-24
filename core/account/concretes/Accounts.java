@@ -1,4 +1,4 @@
-package entities.concretes.superClasses;
+package core.account.concretes;
 
 public class Accounts {
 private int accountId;

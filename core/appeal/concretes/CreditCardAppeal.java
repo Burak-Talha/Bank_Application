@@ -1,6 +1,6 @@
-package entities.concretes.subClasses;
+package core.appeal.concretes;
 
-import entities.abstracts.Appeal;
+import core.appeal.abstracts.Appeal;
 
 public class CreditCardAppeal implements Appeal{
 private int appealId;
