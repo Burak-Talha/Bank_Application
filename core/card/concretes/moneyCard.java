@@ -1,6 +1,6 @@
-package entities.concretes.subClasses;
+package core.card.concretes;
 
-import entities.abstracts.Card;
+import core.card.abstracts.Card;
 
 public class moneyCard implements Card {
 	private int cardTypeId;

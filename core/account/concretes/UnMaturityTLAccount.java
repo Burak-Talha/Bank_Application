@@ -1,6 +1,8 @@
-package entities.concretes.subClasses;
+package core.account.concretes;
 
-public class UnMaturityTLAccount {
+import core.account.abstracts.Account;
+
+public class UnMaturityTLAccount implements Account{
 	private int accountId;
 	private int customersTypeId;
 	private int cardTypeId;
