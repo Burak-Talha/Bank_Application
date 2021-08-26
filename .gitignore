@@ -2,3 +2,4 @@
 *.jar
 *.xml
 /Main.class
+/f.class
