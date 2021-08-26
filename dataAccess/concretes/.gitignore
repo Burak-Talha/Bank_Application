@@ -8,6 +8,7 @@
 /HibernateCardDao.class
 /HibernateAppealDao.class
 /HibernateVeritificationDao.class
+<<<<<<< HEAD
 /HibernateAccountsDao$AccountsDao.class
 /IndividualCustomer.class
 /IndividualCustomerDao.class
@@ -26,3 +27,5 @@
 /HibernateCreditCardDao.class
 /HibernateMoneyCardDao.class
 /HibernateCardAppealVeritificationDao.class
+=======
+>>>>>>> 2498182d393bae1e6432d5ebddb1f2fa33a3f099
