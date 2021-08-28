@@ -2,7 +2,7 @@ package entities.concretes.superClasses;
 
 import javax.persistence.*;
 
-@Entity
+
 @Table(name="staffs")
 public class Staffs{
 	
