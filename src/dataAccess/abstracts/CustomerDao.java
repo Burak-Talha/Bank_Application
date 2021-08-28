@@ -1,12 +1,14 @@
 package dataAccess.abstracts;
 
-public interface CustomerDao {
+import entities.abstracts.Customer;
 
-public void add();
-public void update();
-public void delete();
-public void signIn();
-public void signUp();
+public interface CustomerDao <T extends Customer> {
+
+public void add(T entity);
+public void update(T entity);
+public void delete(T entity);
+public void signIn(T entity);
+public void logIn(T entity);
 
 
 

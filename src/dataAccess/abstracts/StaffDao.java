@@ -1,9 +1,12 @@
 package dataAccess.abstracts;
 
-public interface StaffDao {
-	public void add();
-	public void update();
-	public void delete();
-	public void signIn();
-	public void signUp();
+import entities.abstracts.Staff;
+
+public interface StaffDao <T extends Staff> {
+	public void add(T entity);
+	public void update(T entity);
+	public void delete(T entity);
+	public void signIn(T entity);
+	public void logIn(T entity);
+
 }

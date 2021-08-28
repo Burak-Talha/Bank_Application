@@ -1,39 +1,94 @@
 package dataAccess.concretes;
 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 import dataAccess.abstracts.CustomerDao;
+import entities.abstracts.Customer;
 import entities.concretes.subClasses.CorporateCustomer;
 
-public class HibernateCorporateCustomerDao implements CustomerDao  {
+public class HibernateCorporateCustomerDao implements CustomerDao<CorporateCustomer>  {
+	private int id;
+	private int customersId;
+	private String corporateName;
+	private String email;
+	private String password;
+	private String taxNumber;
 	
-	private CorporateCustomer corporateCustomer;
 
-	public HibernateCorporateCustomerDao(CorporateCustomer corporateCustomer) {
-		this.corporateCustomer = corporateCustomer;
+	public HibernateCorporateCustomerDao(int id, int customersId, String corporateName, String email, String password,
+			String taxNumber) {
+		super();
+		this.id = id;
+		this.customersId = customersId;
+		this.corporateName = corporateName;
+		this.email = email;
+		this.password = password;
+		this.taxNumber = taxNumber;
 	}
 
-	public void add() {
+	SessionFactory factory = new Configuration()
+			    .configure("com\\hibernatedemo\\hibernate.cfg.xml")
+			    .addAnnotatedClass(CorporateCustomer.class).buildSessionFactory();
+	 			
+	 Session session = factory.getCurrentSession();
+	 			
+	@Override
+	public void add(CorporateCustomer entity) {
+		try {
+		session.beginTransaction();
+		entity.setCorporateName(corporateName);
+		entity.setCustomersId(customersId);
+		entity.setEmail(email);
+		entity.setPassword(password);
+		entity.setTaxNumber(taxNumber);
+		session.save(entity);
+		session.getTransaction().commit();
+		System.out.println("Þirket müþterisi eklendi");
+		}finally {
+			factory.close();
+		}
+	}
+
+	@Override
+	public void update(CorporateCustomer entity) {
+		try {
+		entity = session.get(entity.getClass(), id);
+		entity.setCorporateName(corporateName);
+		entity.setEmail(email);
+		entity.setPassword(password);
+		entity.setTaxNumber(taxNumber);
+		session.save(entity);
+		session.getTransaction().commit();
+		System.out.println("Þirket müþterisi güncellendi");
+		} finally {
+			factory.close();
+		}
+	}
+
+	@Override
+	public void delete(CorporateCustomer entity) {
+		try {
+			entity = session.get(entity.getClass(), id);
+			session.delete(entity);
+		}finally {
+			factory.close();
+		}
+	}
+
+	@Override
+	public void signIn(CorporateCustomer entity) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void update() {
+	@Override
+	public void logIn(CorporateCustomer entity) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void delete() {
-		// TODO Auto-generated method stub
-		
-	}
 
-	public void signIn() {
-		// TODO Auto-generated method stub
-		
-	}
 
-	public void signUp() {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
 }
