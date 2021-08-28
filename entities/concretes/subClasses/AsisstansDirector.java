@@ -2,9 +2,11 @@ package entities.concretes.subClasses;
 
 
 
+
+
 import entities.abstracts.Staff;
 import entities.concretes.superClasses.Staffs;
-
+@Enti
 public class AsisstansDirector extends Staffs implements Staff  {
 	private int id;
 	private int staffs_id;

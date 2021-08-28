@@ -1,9 +1,9 @@
 package dataAccess.concretes;
 
 import core.account.concretes.UnMaturityTLAccount;
-import dataAccess.abstracts.AccountDao;
+import dataAccess.abstracts.AccountsDao;
 
-public class HibernateUnMaturityTLAccountDao implements AccountDao{
+public class HibernateUnMaturityTLAccountDao implements AccountsDao{
 	
 	private UnMaturityTLAccount unMaturityTLAccount;
 
@@ -11,10 +11,7 @@ public class HibernateUnMaturityTLAccountDao implements AccountDao{
 		this.unMaturityTLAccount = unMaturityTLAccount;
 	}
 
-	public void depositmoney() {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 	public void withDrawMoney() {
 		// TODO Auto-generated method stub
@@ -22,6 +19,11 @@ public class HibernateUnMaturityTLAccountDao implements AccountDao{
 	}
 
 	public void eftMoney() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void depositMoney() {
 		// TODO Auto-generated method stub
 		
 	}
