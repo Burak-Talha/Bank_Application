@@ -1,0 +1,31 @@
+/AppealDao.class
+/CardDao.class
+/CustomerDao.class
+/AccountsDao.class
+/VeritificationDao.class
+/HibernateAccountsDao.class
+/HibernateCustomerDao.class
+/HibernateCardDao.class
+/HibernateAppealDao.class
+/HibernateVeritificationDao.class
+<<<<<<< HEAD
+/HibernateAccountsDao$AccountsDao.class
+/IndividualCustomer.class
+/IndividualCustomerDao.class
+/CorporateCustomer.class
+/CorporateCustomerDao.class
+/HibernateEmployeeDao.class
+/HibernateIndividualCustomerDao.class
+/HibernateCorporateCustomerDao.class
+/HibernateManagerDao.class
+/HibernateAsisstantDirectorDao.class
+/HibernateMaturityDao.class
+/HibernateMaturityTLAccountDao.class
+/HibernateUnMaturityTLAccountDao.class
+/HibernateCreditCardAppeal.class
+/HibernateMoneyCardAppeal.class
+/HibernateCreditCardDao.class
+/HibernateMoneyCardDao.class
+/HibernateCardAppealVeritificationDao.class
+=======
+>>>>>>> 2498182d393bae1e6432d5ebddb1f2fa33a3f099
